@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habibe Şenel Yılmaz</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+    <!--Page Icon-->
+    <link rel="shortcut icon" href="img/palet.png" type="image/x-icon">
+
+    <style>
+        /*To mark headings*/
+        mark { 
+            background-color: rgba(196, 210, 211, 0.921);
+            color: black;
+        }
+        /*To remove the bullets of list*/
+        ul{
+            list-style-type:none; 
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <header class="header">
+        <a href="trindex.html" class="logo">
+            <img src="img/hsylogo.png" alt="">
+        </a>
+        <nav class="navbar">
+            <a href="trindex.html">Ana Sayfa</a>
+            <a href="trindex2.html">Portfolyo</a>
+            <a href="trindex4.html">SERGİ</a>
+            <a href="trindex3.html">İLETİŞİM</a>
+        </nav>
+    </header>
+
+    <!--Exhibition Section-->
+    <section class="exhibition" id="exhibition">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h2 class="heading"><mark><span>GENÇLERLE SANAT SERGİSİ</span></mark></h2>
+        <div class="text">
+            <br>
+            <img src="img/1704115730451.jpg" alt="GENÇLERLE SANAT SERGİSİ" width="300" height="300">
+            <br>
+            <br>
+            <p>Yağlı boya sanatçısı Habibe Şenel Yılmaz'ın eserleri Üsküdar Gençlik Merkezi koordinatörlüğünde organize edilen sanat sergisinde yer almıştır. </p>
+            <br>
+            <b>SERGİDE YER ALAN SANAT ESERLERİ:  </b>
+                <!--Unordered list-->
+                <ul><br>
+                    <li>&#128615; Semazen</li>
+                    <li>&#128615; Ortaköy Camii</li>
+                    <li>&#128615; Uzungöl</li>
+                    <li>&#128615; Kar</li>
+                    <li>&#128615; Sonbahar Gezintisi</li>
+                </ul>
+            <!--Links to insert images-->
+            <div class="objects">
+                <a href="img/sergi1.jpg" >
+                    <img src="img/sergi1.jpg" alt="" class="image">
+                </a>
+                <a href="img/sergi2.jpg" >
+                    <img src="img/sergi2.jpg" alt="" class="image">
+                </a>
+                <a href="img/sergi3.jpg" >
+                    <img src="img/sergi3.jpg" alt="" class="image">
+                </a>
+                <a href="img/sergi4.jpg" >
+                    <img src="img/sergi4.jpg" alt="" class="image">
+                </a>
+                <a href="img/sergi5.jpg" >
+                    <img src="img/sergi5.jpg" alt="" class="image">
+                </a>
+                <a href="img/sergi6.jpg" >
+                    <img src="img/sergi6.jpg" alt="" class="image">
+                </a>
+            </div>
+        </div>
+        <br>
+    </section>
+
+    <!--Top Button-->
+    <a class="up">&#129029;</a>
+    <script src="script.js"></script>
+
+    <!--Dark Mode Button-->
+    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+    <script>
+        const options = {
+        bottom: '64px', 
+        right: 'unset', 
+        left: '32px', 
+        time: '1s', 
+        mixColor: '#fff', 
+        backgroundColor: '#fff',
+        buttonColorDark: '#100f2c',  
+        buttonColorLight: '#fff',
+        label: '🌓',
+        autoMatchOsTheme: true
+        }
+
+        const darkmode = new Darkmode(options);
+        darkmode.showWidget();
+
+    function addDarkmodeWidget() {
+        new Darkmode().showWidget();
+    }
+    window.addEventListener('load', addDarkmodeWidget);
+    </script>
+
+</body>
+</html>

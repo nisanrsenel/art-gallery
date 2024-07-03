@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habibe Şenel Yılmaz</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+    <!--Page Icon-->
+    <link rel="shortcut icon" href="img/palet.png" type="image/x-icon">
+
+    <style>
+        /*To mark headings*/
+        mark { 
+            background-color: rgba(196, 210, 211, 0.921);
+            color: black;
+        }
+        /*To remove the bullets of list*/
+        ul{
+            list-style-type:none; 
+        }
+        /*To increase the distance before each item*/
+        ol li {
+            margin-left: 25px;
+        }
+    </style>
+    
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <header class="header">
+        <a href="index.html" class="logo">
+            <img src="img/hsylogo.png" alt="">
+        </a>
+        <nav class="navbar">
+            <a href="trindex.html">Ana sayfa</a>
+            <a href="trindex2.html">Portfolyo</a>
+            <a href="trindex4.html">SERGİ</a>
+            <a href="trindex3.html">İLETİŞİM</a>
+        </nav>
+    </header>
+
+    <!--Painting Section-->
+    <section class="painting">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h2 class="heading"><mark><span>Yağlı Boya</span></mark></h2>
+        <div class="content">
+            <!--Ordered Lists inside Unordered List-->
+            <ul>
+                <br>
+                <li><b>&#10048; Yağlı Boya Nedir?</b></li>
+                    <p>Yağlı boya, sıklıkla kullanılan bitki yağı ve özel pigmentlerin karışımından elde edilen bir üründür. Sanatseverlerin tuval çalışmalarında olmazsa olmaz bir yere sahip olan yağlı boyalar, hem uzun yıllar boyunca bozulmaya uğramayan kalitede olduğu için hem de kullanım olarak kolaylık sağladığı için kullanıcılar tarafından tercih edilmektedir.</p>
+                <br>
+                <li><ol><b>&#10048; Özellikleri Nedir?</b></li>
+                    <li>Yavaş kuruyan bir yapıya sahip olduğu için resim çalışmalarının çoğu aşamasında düzeltmeler yapılabilir.</li>
+                    <li>Uzun yıllar boyunca dayanıklılık gösterdiği için tercih sebebidir.</li>
+                    <li>Neme ve suya dayanıklı bir boya çeşididir.</li>
+                    <li>Su geçirmez olduğu için en çok tercih edilen boya çeşididir.</li>
+                </ol>
+                <li><ol><b>&#10048; Kullanılacak Malzemeler Nelerdir?</b></li>
+                    <li>Tuval : Hayal edilen görsellerin somutlaştırılması için kullanılan, boya ve fırçalar yardımı ile resmin yapıldığı alandır.</li>
+                    <li>Palet : Resim yaparken boyalara daha kolay ulaşılması için boyaların üzerine konduğu alandır. Böylece çeşitli renkler kolaylıkla karıştırılabilir. Palet seçimi yaparken hafif bir palet kullanmanız size kolaylık sağlayacaktır. </li>
+                    <li>Fırça : Resim yaparken boyaların yüzeye uygulanması için kullanılan araçtır. Fırça seçimi, yapılması planlanan çalışmanın büyüklüğüne ve küçüklüğüne göre değişiklik göstermektedir. Çok ayrıntılı bir resim yapılması planlanıyorsa ince uçlu fırçalar tercih edilebilir.</li>
+                    <li>Şövale : Tuvalin üzerine konduğu alandır ve resim yapılırken kullanılır.</li>
+                    <li>Spatula : Boyaları tuvale geçirirken kullanılabilen araçlardan biridir.</li>
+                </ol>
+            </ul>
+        </div>
+    </section>
+
+    <!--Top Button-->
+    <a class="up">&#129029;</a>
+    <script src="script.js"></script>
+
+    <!--Dark Mode Button-->
+    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+    <script>
+        const options = {
+        bottom: '64px', 
+        right: 'unset', 
+        left: '32px', 
+        time: '1s', 
+        mixColor: '#fff', 
+        backgroundColor: '#fff',
+        buttonColorDark: '#100f2c',  
+        buttonColorLight: '#fff',
+        label: '🌓',
+        autoMatchOsTheme: true
+        }
+
+        const darkmode = new Darkmode(options);
+        darkmode.showWidget();
+
+    function addDarkmodeWidget() {
+        new Darkmode().showWidget();
+    }
+    window.addEventListener('load', addDarkmodeWidget);
+    </script>
+
+</body>
+</html>

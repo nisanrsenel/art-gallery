@@ -1,0 +1,343 @@
+/*Font type links*/
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Glegoo:wght@400;700&family=Roboto:wght@100;300;400;500;700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/blastine-personal-use');
+
+/*General website styles*/
+root{
+    --main-color:#d37f91;
+    --black:#13131a;
+    --bg:#010103;
+    --border: .1rem solid rgba(255,255,255,.3);
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    outline:none;
+    border:none;
+    text-decoration:none;
+    text-transform:capitalize;
+    transition: .2s linear;
+    
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Aboreto', Dominic;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+body{
+    background: var(--bg);
+}
+
+section{
+    padding: 2rem 7%;
+}
+
+.heading{
+    text-align: center;
+    color: black;
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+    font-size: 4rem;
+    font-family: 'Aboreto', Dominic;
+}
+
+.heading span{
+    text-align: center;
+    color: var(--main-color);
+}
+
+.header{
+    background: var(--bg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 7%;
+    border-bottom: var(--border);
+    position: fixed;
+    top:0; left:0; right:0;
+    z-index: 1000;
+    background:url(img/siyah-arka-plan-17-buyuk.jpg)no-repeat
+    center center/cover;
+}
+
+.header .logo img{
+    height: 6rem;
+}
+
+.header .navbar a{
+    margin:0 1rem;
+    font-size: 1.6rem;
+    color:#fff;
+    justify-content: center;
+}
+
+.header .navbar a:hover{
+    color: grey;
+    padding-bottom: .10rem;
+}
+
+/*Home section style*/
+.home{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background:url(img/background2.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.home .content{
+    background: url(img/PngItem_5063482.png) no-repeat;
+    background-size: contain;
+    max-width: 60rem;
+}
+
+.home .content h2{
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    padding: 1rem 0;
+    color: #fff;
+}
+
+.home .content h3{
+    font-family: 'Blastine personal use', sans-serif;
+    text-transform: capitalize;
+    font-size: 3rem;
+    padding: 0rem 0;
+    color: #fff;
+    letter-spacing: 0.1rem;
+}
+
+.home .content h3 span{
+    display: inline-block;
+    animation: animate 1.5s linear;
+}
+
+/*To add animation for headings*/
+@keyframes animate{
+    0%{
+        opacity:0;
+        transform:rotateY(90deg);
+        filter:blur(10px);
+    }
+    100%{
+        opacity: 1;
+        transform: rotateY(0deg);
+        filter:blur(0);
+    }
+}
+
+/*Discover button and scroll button styles in Home section*/
+button{
+    background-color: rgba(226, 135, 89, 0.889);
+    color: white;
+    padding: 15px;
+    border: 2px rgba(255, 255, 255, 0.96) solid;
+}
+
+.scrollOk{
+    position: absolute;
+    top:85%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+.scrollOk span{
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-bottom: 1px solid #fff;
+    border-right: 1px solid #fff;
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate2 2s infinite;
+}
+
+.scrollOk span :nth-child(2){
+    animation-delay: -0.2s;
+}
+.scrollOk span :nth-child(3){
+    animation-delay: -0.4s;
+}
+
+/*Adding animation for scroll buttons*/
+@keyframes animate2{
+    0%{
+        opacity:0;
+        transform: rotate(45deg) translate(-20px, -20px);
+    }
+    50%{
+        opacity:1;
+    }
+    100%{
+        opacity:0;
+        transform: rotate(45deg) translate(20px, 20px);
+    }
+}
+
+/*About section style*/
+.about h2{
+    align-items: center;
+    font-family: 'Aboreto', Dominic;
+    font-size:50px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.about h2 span{
+    display: inline-block;
+    animation: animate 1.5s linear;
+    animation-delay: 5s;
+}
+
+.about .content{
+    display: flex;
+    align-items: center;
+    background: var(--black);
+    flex-wrap: wrap;
+    flex-wrap: 1 1 45rem;
+    padding: 2rem;
+    text-align: center;
+    justify-content: center;
+}
+
+.about .content p{
+    font-size: 2.1rem;
+    font-family:'Glegoo', eduardo;
+    text-transform: none;
+    color: #fff;
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+
+/*Background box for Contact section*/
+#kutu{
+    width:500px;
+    height:585px;
+    padding:5px;
+    background:#000;
+    color:#fff;
+    text-align: center;
+    align-items: center;
+    opacity:calc(85%);
+    border-color: rgba(255, 255, 255, 0.921);
+    border-width: 10px;
+    border-style: double;
+}
+
+/*Contact section style*/
+.contact{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100 px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background:url(img/colorful-acrylic-brush-stroke-background.jpg) no-repeat;
+    background-size: cover;
+}
+
+.contact .content{
+    font-family:'Glegoo', eduardo;
+    max-width: 1200px;
+    text-align: center;
+}
+
+.contact .content h2{
+    font-family: 'Aboreto', Dominic;
+    font-size:80px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.contact .content h2 span{
+    display: inline-block;
+    animation: animate 3s linear;
+}
+
+.contact .text h3{
+    font-size:20px;
+    color: #fff;
+    font-family:'Glegoo', eduardo;
+    text-transform: none;
+}
+
+.contact .text p{
+    font-size: 19px;
+    color: #fff;
+    font-family:'Glegoo', eduardo;
+    text-transform: none;
+}
+
+/*Exhibition section style*/
+.exhibition h2{
+    isolation: isolate; /*to isolate heading from dark mode*/
+}
+
+.exhibition h2 span{
+    display: inline-block;
+    animation: animate 1.5s linear;
+}
+
+.exhibition .text{
+    display: inside;
+    align-items: center;
+    padding: 2rem;
+    text-align: center;
+    font-size: 2.2rem;
+}
+
+.exhibition .text p{
+    font-size: 2.1rem;
+    font-family:'Glegoo', eduardo;
+    text-transform: none;
+    color: #000;
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+
+ul li {
+    font-family:'Glegoo', eduardo;
+    margin-bottom: 15px;
+}
+
+/*Painting section style*/
+.painting h2{
+    font-family: 'Aboreto', Dominic;
+    font-size:80px;
+    font-weight: 500;
+    color: #fff;   
+}
+
+.painting h2 span{
+    display: inline-block;
+    animation: animate 1.5s linear;
+}
+
+.painting h2{
+    isolation: isolate; /*to isolate heading from dark mode*/
+}
+
+.painting .content {
+    font-size: 2.1rem;
+    font-family:'Glegoo', eduardo;
+    color: black;
+    padding: 1rem 0;
+    line-height: 2;
+}
+
+.painting .content ul li, ol li, p{
+    font-size: 2.1rem;
+    font-family:'Glegoo', eduardo;
+    text-transform: none;
+    color: black;
+    padding: 1rem 0;
+    line-height: 1.5;
+}

@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    transition: all .2s linear;
+}
+
+body{
+    background: #fff;
+}
+
+/*To spesify box containing images*/
+.objects{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.objects a{
+    height: 200px;
+    width: 300px;
+    margin: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 3px 5px #000;
+}
+
+.objects a img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.objects a img:hover{
+    transform: scale(1.4);
+}
+
+/*Styling Portfolio section content*/
+.portfolio h2{
+    align-items: center;
+    font-family: 'Aboreto', Dominic;
+    font-size:80px;
+    font-weight: 500;
+    color: #fff;
+    isolation: isolate; /*to isolate heading from dark mode*/
+}
+
+.portfolio h2 span{
+    display: inline-block;
+    animation: animate 1.5s linear;
+}
+
+/*Top button*/
+.up{
+    display: none;
+    height: 65px;
+    width: 65px;
+    border-radius: 50px;
+    background-color: grey;
+    color: black;
+    font-size: 40px;
+    line-height: 80px;
+    text-align: center;
+    position: fixed;
+    bottom: 70px;
+    right:30px;
+    text-align: center;
+    align-items: center;
+}
+
+.up:hover{
+    cursor: pointer;
+}
+
+.show{
+    display: block;
+}
+

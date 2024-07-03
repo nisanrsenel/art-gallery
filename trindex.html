@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habibe Şenel Yılmaz</title>
+
+    <link rel="stylesheet" href="style.css">
+    <!--Page Icon-->
+    <link rel="shortcut icon" href="img/palet.png" type="image/x-icon">
+
+    <style>
+        /*To mark headings*/
+        mark { 
+            background-color: rgba(196, 210, 211, 0.921);
+            color: black;
+        }
+        /*To specify background color*/
+        body{
+            background: black;
+        }
+        /*To create menu content*/
+        .navbar2 {
+            height: 100%;
+            width: 0; 
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            right: 0;
+            background-color: #111;
+            overflow-x: hidden; 
+            transition: 0.5s;
+            padding-top: 60px; 
+        }
+        .navbar2 a {
+            padding: 8px 8px 8px 32px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+        .navbar2 a:before{
+            content: '';
+            display: inline-block;
+            width: 32px;
+            height: 32px;
+        }
+        .navbar2 a:hover {
+            color: #fff; 
+        }
+        .navbar2 .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+        /*To show images inside boxes*/
+        .container{
+            width: 90%;
+            margin: 0 auto;
+            padding: 50px 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        .box{
+            background: grey;
+            margin: 0px 18px;
+            transition: 0.5s;;
+        }
+        .box:hover{
+            transform: scale(1.2);
+            background: black;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+         
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <!-- Navigation Bar -->
+        <a href="#anasayfa" class="logo">
+            <img src="img/hsylogo.png" alt="">
+        </a>
+        <nav class="navbar">
+            <a href="#anasayfa">Ana Sayfa</a>
+            <a href="#hakkinda">Hakkında</a>
+            <a href="trindex2.html">Portfolyo</a>
+            <a href="trindex4.html">SERGİ</a>
+            <a href="trindex3.html">İLETİŞİM</a>
+        </nav>
+
+        <!--Menu Bar-->
+        <div id="Menu" class="navbar2">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+          
+            &times;</a> <!--multiplication sign (×)-->
+          
+            <a href="index.html"><img src="img/eng.png" alt=""></a>
+            <a href="trindex.html"><img src="img/tr.png" alt=""></a>
+        </div>
+        
+        <span style="font-size:30px; cursor:pointer; color: #fff;" onclick="openNav()">
+        &#9776; <!--Hamburger menu icon-->
+        </span>
+    </header>
+
+    <!--Home Section-->
+    <section class="home" id="anasayfa">
+        <div class="content">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2 style="margin-left: 117px">Sanatçı</h2>
+            <br>
+            <br>
+            <h3><span style="margin-left: 150px";>Habibe Senel</span><span style="margin-left: 200px";>Yılmaz</span></h3>
+            <br>
+            <br>
+            <br>
+            <br>
+            <!--Button used to link to the another page-->
+            <button id="button" onclick="myFunction()">Keşfet</button>
+        </div>
+        <!--Animated button to scroll the page-->
+        <div class="scrollOk">
+            <span><button id="buttonOk" onclick="Function()"></button></span>
+            <span><button id="buttonOk2" onclick="Function()"></button></span>
+            <span><button id="buttonOk3" onclick="Function()"></button></span>
+        </div>
+    </section>
+
+    <!--About Section-->
+    <section class="about" id="hakkinda">
+        <br>
+        <h2 class="heading"><mark><span>Sanatçı Hakkında</span></mark></h2>
+        <div class="content">
+            <p>İlahiyat Fakültesi'nden mezun olarak bu alanda kendini geliştirdi. Eğitimci olarak kariyerine devam etmektedir.
+                <br><br>Yağlı boya tablolarında manzara çalışmayı seven sanatçı, İslam Mimarisi ve İslam sanatlarındaki çeşitli tezyini yol ve yöntemler, geometrik soyut birimler içeren zengin desen repertuvarından etkilenerek eserlerine bu üslubu yansıtmıştır.</p>
+            <p id="myElement">"Sanatın özü olan güzellik ilahi bir niteliktir, sanatkar bu güzelliği keşfedendir."</p>
+        </div>
+        <!--The section where the pictures are shown inside boxes-->
+        <div class="container">
+            <div class="box"><img src="img/box1.jpg" alt=""></div>
+            <div class="box"><img src="img/box2.jpg" alt=""></div>
+            <div class="box"><img src="img/box3.jpg" alt=""></div>
+            <div class="box"><img src="img/box4.jpg" alt=""></div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </section>
+
+    <script>
+        //Open/Close Menu Bar 
+        function openNav() {
+          document.getElementById("Menu").style.width = "250px";
+        }
+        function closeNav() {
+          document.getElementById("Menu").style.width = "0";
+        }
+        //Discover Button in home section
+        document.querySelector("#button").onclick=function(){
+            window.location.href="trindex5.html"
+        }
+        //Three seperate buttons for animated view in home section
+        document.querySelector("#buttonOk").onclick=function(){
+            window.location.href="#hakkinda"
+        }
+        document.querySelector("#buttonOk2").onclick=function(){
+            window.location.href="#hakkinda"
+        }
+        document.querySelector("#buttonOk3").onclick=function(){
+            window.location.href="#hakkinda"
+        }
+        //Style of the last sentence in about section
+        document.getElementById("myElement").style.fontFamily = "Times New Roman, serif";
+        document.getElementById("myElement").style.fontStyle = "italic";
+        document.getElementById("myElement").style.fontSize = "28px";
+        document.getElementById("myElement").style.color = "rgba(196, 210, 211, 0.921)";
+    </script>
+</body>
+</html>

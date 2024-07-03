@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habibe Şenel Yılmaz</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+    <!--Page Icon-->
+    <link rel="shortcut icon" href="img/palet.png" type="image/x-icon">
+
+    <style>
+        /*To mark headings*/
+        mark { 
+            background-color: rgba(196, 210, 211, 0.921);
+            color: black;
+        }
+        /*To remove the bullets of list*/
+        ul{
+            list-style-type:none; 
+        }
+        /*To increase the distance before each item*/
+        ol li {
+            margin-left: 25px;
+        }
+    </style>
+    
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <header class="header">
+        <a href="index.html" class="logo">
+            <img src="img/hsylogo.png" alt="">
+        </a>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="index2.html">Portfolio</a>
+            <a href="index4.html">Exhibition</a>
+            <a href="index3.html">Contact</a>
+        </nav>
+    </header>
+
+    <!--Painting Section-->
+    <section class="painting">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h2 class="heading"><mark><span>Oil Painting</span></mark></h2>
+        <div class="content">
+            <!--Ordered Lists inside Unordered List-->
+            <ul>
+                <br>
+                <li><b>&#10048; What is Oil Painting?</b></li>
+                    <p>Oil paint is a product obtained from a mixture of plant oil and special pigments, which are often used. Oil paints, which have an indispensable place in the canvas works of art lovers, are preferred by users both because they are of a quality that has not been degraded for many years and because they provide convenience in use.</p>
+                <br>
+                <li><ol><b>&#10048; What are the Characteristics?</b></li>
+                    <li>Since it has a slow-drying structure, corrections can be made at most stages of painting work.</li>
+                    <li>It is the reason for preference because it has shown durability for many years.</li>
+                    <li>It is a moisture- and water-resistant type of paint.</li>
+                    <li>It is the most preferred paint type because it is waterproof.</li>
+                </ol>
+                <li><ol><b>&#10048; What are the Materials that need to be used?</b></li>
+                    <li>Canvas : It is the area used for the embodiment of the imagined visuals, where the painting is made with the help of paints and brushes.</li>
+                    <li>Palette: This is the area where the paints are placed on to make it easier to reach the paints while painting. Thus, various colors can be easily mixed. It will be convenient for you to use a light pallet when choosing pallets.</li>
+                    <li>Brush : It is the tool used for applying paints to the surface while painting. The choice of brush varies according to the size and smallness of the planned work. If a very detailed painting is planned, fine-tipped brushes may be preferred.</li>
+                    <li>Easel : It is the area where the canvas is placed on and is used when painting.</li>
+                    <li>Spatula : It is one of the tools that can be used when transferring paints to canvas.</li>
+                </ol>
+            </ul>
+        </div>
+    </section>
+
+    <!--Top Button-->
+    <a class="up">&#129029;</a>
+    <script src="script.js"></script>
+
+    <!--Dark Mode Button-->
+    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+    <script>
+        const options = {
+        bottom: '64px', 
+        right: 'unset', 
+        left: '32px', 
+        time: '1s', 
+        mixColor: '#fff', 
+        backgroundColor: '#fff',
+        buttonColorDark: '#100f2c',  
+        buttonColorLight: '#fff',
+        label: '🌓',
+        autoMatchOsTheme: true
+        }
+
+        const darkmode = new Darkmode(options);
+        darkmode.showWidget();
+
+    function addDarkmodeWidget() {
+        new Darkmode().showWidget();
+    }
+    window.addEventListener('load', addDarkmodeWidget);
+    </script>
+
+</body>
+</html>
